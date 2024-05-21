@@ -4,9 +4,11 @@ const server = jsonServer.create()
 //const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
-
 const filePath = path.join('/tmp', 'db.json');
 fs.writeFileSync(filePath, JSON.stringify(data));
+
+// Create a router using the temporary file
+const router = jsonServer.router(filePath);
 
 server.use(middlewares)
 // Add this before server.use(router)
