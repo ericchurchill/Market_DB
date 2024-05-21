@@ -6,7 +6,14 @@
         "BusNumber": "1",
         "Power": "300",
         "Price": "30"
-      }
+      },
+      {
+        "id": "13a8",
+        "SlotNumber": "1",
+        "BusNumber": "1",
+        "Power": "300",
+        "Price": "30"
+       }
     ],
     "MCP": [
       {
