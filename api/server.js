@@ -1,6 +1,7 @@
+// See https://github.com/typicode/json-server#module
 const jsonServer = require('json-server')
 const server = jsonServer.create()
-const router = jsonServer.router({})  // Initialize an empty in-memory database
+const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
